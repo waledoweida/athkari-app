@@ -137,7 +137,7 @@
         <h1>أذكاري</h1>
         <p class="lead">رفيقك اليومي للأذكار ومواقيت الصلاة. أذكار الصباح والمساء، والأذان في وقته، وتذكير بالصلاة على النبي ﷺ طول اليوم.</p>
         <div class="cta">
-          <a class="btn btn-dl" id="dl" href="https://github.com/waledoweida/athkari-app/releases/latest/download/athkari.apk">
+          <a class="btn btn-dl" id="dl" href="athkari.apk">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 00-.66-.38l-1.86 3.22A11.4 11.4 0 0012 8.1c-1.77 0-3.43.38-4.92 1.04L5.22 5.92a.38.38 0 10-.66.38L6.4 9.48A10.8 10.8 0 001 18h22a10.8 10.8 0 00-5.4-8.52zM7 15.25a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5zm10 0a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"/></svg>
             <span>تحميل للأندرويد<small id="dlmeta">مجاني • ملف APK</small></span>
           </a>
@@ -200,15 +200,14 @@
       <li><b>اسمح بالتثبيت</b><span>لو ظهرت رسالة، اختار «الإعدادات» وفعّل «السماح من هذا المصدر».</span></li>
       <li><b>ثبّت وابدأ</b><span>اضغط «تثبيت»، وافتح أذكاري. 🌿</span></li>
     </ol>
-    <p class="note">التطبيق آمن ومجاني ولا يجمع أي بيانات شخصية. وعند نزول نسخة جديدة، التطبيق نفسه هينبهك وتحدّث بضغطة واحدة. <a href="privacy.html">سياسة الخصوصية</a><br>
-      لو التثبيت فشل على موبايل قديم، حمّل <a href="https://github.com/waledoweida/athkari-app/releases/latest/download/athkari-universal.apk">النسخة الشاملة</a> (أكبر في الحجم وتشتغل على كل الأجهزة).</p>
+    <p class="note">التطبيق آمن ومجاني ولا يجمع أي بيانات شخصية. وعند نزول نسخة جديدة، التطبيق نفسه هينبهك وتحدّث بضغطة واحدة. <a href="privacy.html">سياسة الخصوصية</a></p>
   </section>
 
   <div class="final">
     <h2>ابدأ يومك بذكر الله</h2>
     <p>حمّل أذكاري الآن، وخلّي الذكر عادة يومية.</p>
     <div class="cta">
-      <a class="btn btn-dl" href="https://github.com/waledoweida/athkari-app/releases/latest/download/athkari.apk"><span>تحميل للأندرويد</span></a>
+      <a class="btn btn-dl" href="athkari.apk"><span>تحميل للأندرويد</span></a>
     </div>
   </div>
 </main>
@@ -219,18 +218,10 @@
 </footer>
 
 <script>
-  // بيانات آخر إصدار (الرقم والحجم) تلقائيًا
-  fetch("https://api.github.com/repos/waledoweida/athkari-app/releases/latest")
-    .then(r => r.ok ? r.json() : null)
-    .then(d => {
-      if (!d) return;
-      const a = (d.assets || []).find(x => x.name === "athkari.apk");
-      const parts = ["مجاني"];
-      if (d.name) parts.push(d.name);
-      if (a) parts.push(Math.round(a.size / 1048576) + " ميجا");
-      document.getElementById("dlmeta").textContent = parts.join(" • ");
-    })
-    .catch(() => {});
+  // رقم الإصدار وحجم الملف من version.json
+  fetch("version.json", {cache: "no-store"}).then(r => r.ok ? r.json() : null).then(v => {
+    if (v) document.getElementById("dlmeta").textContent = `مجاني • الإصدار ${v.version} • ${v.sizeMb} ميجا`;
+  }).catch(() => {});
 </script>
 </body>
 </html>
