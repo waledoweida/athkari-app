@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.png">
+<title>سياسة خصوصية أذكاري</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Layout: single readable column, a green masthead band carrying the app mark, sections as numbered clauses */
+  :root{
+    --bg:#FBF8EF; --surface:#FFFFFF; --fg:#1F2A24; --muted:#5E6A63;
+    --green:#1B4332; --green-2:#2D6A4F; --gold:#B88F1F; --line:#E7DFC9;
+    --display:"Amiri", "Noto Naskh Arabic", serif;
+    --body:"Noto Kufi Arabic", "Segoe UI", Tahoma, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0F1A15; --surface:#16231C; --fg:#EDE7D8; --muted:#A3AEA7;
+      --green:#163A2B; --green-2:#24563F; --gold:#D9B44A; --line:#26392F; color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0F1A15; --surface:#16231C; --fg:#EDE7D8; --muted:#A3AEA7;
+    --green:#163A2B; --green-2:#24563F; --gold:#D9B44A; --line:#26392F; color-scheme:dark;
+  }
+  body{direction:rtl;background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.95;font-size:15px}
+  .band{background:linear-gradient(135deg,var(--green),var(--green-2));color:#fff;
+    padding-block:40px 34px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .band .in{max-width:720px;margin:auto;display:flex;gap:18px;align-items:center}
+  .mark{width:64px;height:64px;flex:none}
+  .band h1{font-family:var(--display);font-size:clamp(28px,6vw,40px);margin:0;line-height:1.3;text-wrap:balance}
+  .band p{margin:2px 0 0;color:#E9D8A6;font-size:13px}
+  main{max-width:720px;margin:auto;padding-block:28px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:14px}
+  .lead{font-size:16px;color:var(--fg)}
+  section{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  h2{font-size:16.5px;margin:0 0 6px;color:var(--green-2);display:flex;gap:10px;align-items:baseline}
+  :root[data-theme="dark"] h2{color:var(--gold)}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) h2{color:var(--gold)}}
+  h2 .n{font-variant-numeric:tabular-nums;color:var(--gold);font-weight:700;font-size:14px}
+  section p{margin:0}
+  ul{margin:6px 0 0;padding-inline-start:20px}
+  li{margin-block:3px}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+  th,td{text-align:start;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:600}
+  .tbl{overflow-x:auto}
+  .mail{direction:ltr;unicode-bidi:isolate;font-weight:700;color:var(--gold);user-select:all}
+  footer{text-align:center;color:var(--muted);font-size:13px}
+  body{margin:0}
+</style>
+</head>
+<body>
+
+<div class="band">
+  <div class="in">
+    <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+      <g fill="#C9A227">
+        <rect x="22" y="22" width="56" height="56"/>
+        <rect x="22" y="22" width="56" height="56" transform="rotate(45 50 50)"/>
+      </g>
+      <g fill="#1B4332">
+        <rect x="27" y="27" width="46" height="46"/>
+        <rect x="27" y="27" width="46" height="46" transform="rotate(45 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="15" fill="#C9A227"/>
+      <circle cx="55" cy="48" r="12.5" fill="#1B4332"/>
+    </svg>
+    <div>
+      <h1>سياسة الخصوصية لتطبيق أذكاري</h1>
+      <p>آخر تحديث: 22 أكتوبر 2026</p>
+    </div>
+  </div>
+</div>
+
+<main>
+  <p class="lead">تطبيق «أذكاري» تطبيق مجاني للأذكار والأدعية ومواقيت الصلاة. نحترم خصوصيتك: التطبيق لا يطلب منك إنشاء حساب، ولا يجمع اسمك أو رقمك أو بريدك، ولا يعرض إعلانات، ولا يبيع أي بيانات.</p>
+
+  <section>
+    <h2><span class="n">1</span>البيانات التي تبقى على جهازك فقط</h2>
+    <p>هذه البيانات تُحفظ داخل التطبيق على هاتفك، ولا تُرسل إلى أي خادم:</p>
+    <ul>
+      <li>الإعدادات: المظهر، حجم الخط، مواعيد التذكير، طريقة حساب المواقيت.</li>
+      <li>المفضلة، وعدّاد الأذكار والسبحة، والإحصائيات، وتقدّم الورد القرآني.</li>
+      <li>موقعك (المدينة أو الإحداثيات) إذا اخترت تحديده.</li>
+    </ul>
+    <p>عند حذف التطبيق تُحذف هذه البيانات كلها.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>الموقع الجغرافي</h2>
+    <p>يطلب التطبيق إذن الموقع فقط عندما تضغط «تحديد موقعي»، ويستخدمه لحساب مواقيت الصلاة واتجاه القبلة على جهازك. لا يُرسل موقعك لأي جهة، ولا يُستخدم في الخلفية. يمكنك بدلًا من ذلك اختيار مدينتك من القائمة دون منح الإذن.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>الإشعارات والمنبهات</h2>
+    <p>تذكير الأذكار والأذان وتذكير الصلاة على النبي ﷺ والصيام كلها إشعارات تُجدول محليًا على هاتفك. إذن «المنبهات الدقيقة» يُستخدم فقط لإظهار الأذان في وقته بالضبط.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>خدمات Google Firebase</h2>
+    <p>يستخدم التطبيق خدمات Firebase من Google لغرضين فقط:</p>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>الخدمة</th><th>الغرض</th><th>البيانات</th></tr></thead>
+        <tbody>
+          <tr><td>Cloud Firestore</td><td>تنزيل أحدث نصوص الأذكار التي يضيفها المشرف</td><td>لا تُرسل بيانات شخصية؛ التطبيق يقرأ المحتوى فقط</td></tr>
+          <tr><td>Cloud Firestore</td><td>عدّ الأجهزة النشطة بشكل مجهول</td><td>رقم عشوائي ينشئه التطبيق للجهاز، وتاريخ آخر فتح، ورقم إصدار التطبيق، مرة واحدة في اليوم. لا يرتبط بهويتك أو برقم هاتفك</td></tr>
+          <tr><td>Cloud Messaging</td><td>استقبال رسائل عامة من إدارة التطبيق لكل المستخدمين</td><td>معرّف إشعارات عشوائي للجهاز تديره Google</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>تعالج Google هذه البيانات وفق <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">سياسة خصوصية Firebase</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>الأطفال</h2>
+    <p>التطبيق مناسب لجميع الأعمار، ولا يجمع أي بيانات شخصية من أي مستخدم، بما في ذلك الأطفال.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span>المحتوى والأصوات</h2>
+    <p>نصوص الأذكار مأخوذة من القرآن الكريم وكتب السنة المعروفة مع ذكر المصدر. صوت الأذان تسجيل من Wikimedia Commons بترخيص الملكية العامة (CC0).</p>
+  </section>
+
+  <section>
+    <h2><span class="n">7</span>التواصل والتغييرات</h2>
+    <p>لأي سؤال أو طلب بخصوص الخصوصية تواصل معنا على: <span class="mail">abwwydtwlydahmd@gmail.com</span></p>
+    <p>إذا تغيّرت هذه السياسة سننشر النسخة الجديدة على هذه الصفحة مع تاريخ التحديث.</p>
+  </section>
+
+  <footer>أذكاري ✦ تصميم: وليد أبو عويضة</footer>
+</main>
+
+</body>
+</html>
