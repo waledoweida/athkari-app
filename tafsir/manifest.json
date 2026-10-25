@@ -1,0 +1,17 @@
+{
+ "ibnkathir": {
+  "bytes": 15263700,
+  "gz": 3503367,
+  "sha256": "addac1d92b4e8828e609c36cd215381900038631520456d3c594001ea4dae34c"
+ },
+ "jalalayn": {
+  "bytes": 1908306,
+  "gz": 538433,
+  "sha256": "690bb1f7adcbd328bd0fe54b696f24a5d6b66d82a1b30e070a37d8d8a88986b2"
+ },
+ "saadi": {
+  "bytes": 5931084,
+  "gz": 1583676,
+  "sha256": "49d24423c1414ff30ae248db6a8f72e7a29049acdfb64f595b8df44fe530982e"
+ }
+}
