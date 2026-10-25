@@ -138,9 +138,9 @@
         <h1>أذكاري</h1>
         <p class="lead">رفيقك اليومي للقرآن والأذكار ومواقيت الصلاة. المصحف كامل بالتفسير والتلاوة، وأذكار الصباح والمساء، والأذان في وقته، وتذكير بالصلاة على النبي ﷺ.</p>
         <div class="cta">
-          <a class="btn btn-dl" id="dl" href="athkari.apk">
+          <a class="btn btn-dl" id="dl" href="https://play.google.com/store/apps/details?id=com.athkari.athkari" target="_blank" rel="noopener">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 00-.66-.38l-1.86 3.22A11.4 11.4 0 0012 8.1c-1.77 0-3.43.38-4.92 1.04L5.22 5.92a.38.38 0 10-.66.38L6.4 9.48A10.8 10.8 0 001 18h22a10.8 10.8 0 00-5.4-8.52zM7 15.25a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5zm10 0a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"/></svg>
-            <span>تحميل للأندرويد<small id="dlmeta">مجاني • ملف APK</small></span>
+            <span>حمّل من جوجل بلاي<small id="dlmeta">مجاني • Google Play</small></span>
           </a>
           <a class="btn btn-ghost" href="#install">طريقة التثبيت</a>
         </div>
@@ -209,21 +209,20 @@
 
   <section id="install">
     <div class="eyebrow">طريقة التثبيت</div>
-    <h2>4 خطوات بسيطة</h2>
+    <h2>من جوجل بلاي في خطوتين</h2>
     <ol class="steps">
-      <li><b>حمّل الملف</b><span>اضغط زرار «تحميل للأندرويد» من موبايلك.</span></li>
-      <li><b>افتح الملف</b><span>من الإشعارات أو من مجلد التنزيلات.</span></li>
-      <li><b>اسمح بالتثبيت</b><span>لو ظهرت رسالة، اختار «الإعدادات» وفعّل «السماح من هذا المصدر».</span></li>
-      <li><b>ثبّت وابدأ</b><span>اضغط «تثبيت»، وافتح أذكاري. 🌿</span></li>
+      <li><b>افتح جوجل بلاي</b><span>اضغط زرار «حمّل من جوجل بلاي» من موبايلك.</span></li>
+      <li><b>ثبّت وابدأ</b><span>اضغط «تثبيت»، وافتح أذكاري. التحديثات هتوصلك أوتوماتيك. 🌿</span></li>
+      <li><b>منزّله من الموقع قبل كده؟</b><span>امسح النسخة القديمة الأول، وبعدين نزّله من جوجل بلاي.</span></li>
     </ol>
-    <p class="note">التطبيق آمن ومجاني ولا يجمع أي بيانات شخصية. وعند نزول نسخة جديدة، التطبيق نفسه هينبهك وتحدّث بضغطة واحدة. <a href="privacy.html">سياسة الخصوصية</a></p>
+    <p class="note">التطبيق آمن ومجاني ولا يجمع أي بيانات شخصية. <a href="privacy.html">سياسة الخصوصية</a></p>
   </section>
 
   <div class="final">
     <h2>ابدأ يومك بذكر الله</h2>
     <p>حمّل أذكاري الآن، وخلّي الذكر عادة يومية.</p>
     <div class="cta">
-      <a class="btn btn-dl" href="athkari.apk"><span>تحميل للأندرويد</span></a>
+      <a class="btn btn-dl" href="https://play.google.com/store/apps/details?id=com.athkari.athkari" target="_blank" rel="noopener"><span>حمّل من جوجل بلاي</span></a>
     </div>
   </div>
 </main>
@@ -237,7 +236,7 @@
 <script>
   // رقم الإصدار وحجم الملف من version.json
   fetch("version.json", {cache: "no-store"}).then(r => r.ok ? r.json() : null).then(v => {
-    if (v) document.getElementById("dlmeta").textContent = `مجاني • الإصدار ${v.version} • ${v.sizeMb} ميجا`;
+    if (v) document.getElementById("dlmeta").textContent = `مجاني • Google Play • الإصدار ${v.version}`;
   }).catch(() => {});
 </script>
 </body>
